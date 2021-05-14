@@ -1,0 +1,9 @@
+var fun = {
+  typeOf:function (str, type) {
+    // console.log(str.indexOf(type))
+    return str.indexOf(type)
+  },
+}
+module.exports = {
+  typeOf: fun.typeOf,
+};

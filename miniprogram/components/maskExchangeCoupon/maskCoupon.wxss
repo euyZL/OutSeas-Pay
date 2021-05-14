@@ -1,0 +1,253 @@
+.container {
+  /* width: 110vw;
+  height: 110vh; */
+  /* width: 471rpx;
+  height: 997rpx; */
+  position: fixed;
+  top: 352rpx;
+  left: 140rpx;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-view {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  /* transform: translate(-40rpx, -80rpx); */
+}
+
+.title {
+  font-family: PingFangSC-Semibold;
+  font-size: 42rpx;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  text-align: center;
+  position: absolute;
+  transform: translateY(-104rpx);
+}
+
+.coupon-view {
+  width: 471rpx;
+  height: 714rpx;
+}
+
+/* 券上部 */
+.coupon-body {
+  width: 471rpx;
+  height: 560rpx;
+  display: flex;
+  flex-wrap: nowrap;
+  position: relative;
+  /* background-color: #FF9600; */
+}
+
+.coupon-body-left {
+  width: 236rpx;
+  height: 560rpx;
+  /* background-color: #FF9600; */
+  border-radius: 15rpx 0 0 0;
+  background-image: radial-gradient(circle at left bottom, transparent 20rpx, #FF9600 20rpx);
+}
+
+.coupon-body-right {
+  width: 235rpx;
+  height: 560rpx;
+  /* background-color: #FF9600; */
+  border-radius: 0 15rpx 0 0;
+  background-image: radial-gradient(circle at right bottom, transparent 20rpx, #FF9600 20rpx);
+}
+
+.coupon-body:after {
+  content: '';
+  position: absolute;
+  height: 14rpx;
+  width: 411rpx;
+  transform: translate(30rpx, 548rpx);
+  background-image: radial-gradient(circle 7rpx at bottom, #FFFFFF 7rpx, transparent 7rpx);
+  background-size: 18rpx 14rpx;
+}
+
+/* 券内容框 */
+.coupon-content {
+  width: 471rpx;
+  height: 560rpx;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 微信支付 */
+.wxpay {
+  width: 128rpx;
+  height: 45rpx;
+  font-family: PingFangSC-Medium;
+  font-size: 32rpx;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 45rpx;
+  margin-bottom: 14rpx;
+}
+
+/* 类型 */
+.coupon-type {
+  width: 210rpx;
+  height: 59rpx;
+  font-family: PingFangSC-Semibold;
+  font-size: 42rpx;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 59rpx;
+}
+
+/* 中间的信息 */
+.coupon-info {
+  width: 410rpx;
+  height: 198rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.exchange-coupon {
+  width: 410rpx;
+  height: 198rpx;
+  margin-top: 42rpx;
+  background: #FFFFFF;
+  border-radius: 4rpx;
+}
+
+.exchange {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.exchange-left {
+  height: 40rpx;
+  opacity: 0.9;
+  font-family: PingFangSC-Medium;
+  font-size: 26rpx;
+  color: #000000;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 40rpx;
+}
+
+.exchange-right {
+  height: 55rpx;
+  font-family: PingFangSC-Semibold;
+  font-size: 40rpx;
+  color: #F15451;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 55rpx;
+}
+
+.line {
+  width: 346rpx;
+  height: 2rpx;
+  opacity: 0.42;
+  background: #DCDCDC;
+  margin-top: 10rpx;
+  margin-bottom: 13rpx;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  position: relative;
+  transform: translateX(40rpx);
+}
+
+.price-left {
+  width: 120rpx;
+  height: 33rpx;
+  opacity: 0.6;
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #000000;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 33rpx;
+  margin-right: 16rpx;
+}
+
+.price-right {
+  text-decoration: line-through;
+  width: 136rpx;
+  height: 33rpx;
+  opacity: 0.6;
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #000000;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 33rpx;
+}
+
+/* 券脚 */
+.coupon-foot {
+  width: 471rpx;
+  height: 154rpx;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.coupon-foot-left {
+  width: 236rpx;
+  height: 154rpx;
+  border-radius: 0 0 0 15rpx;
+  background-image: radial-gradient(circle at left top, transparent 20rpx, #FFFFFF 20rpx);
+}
+
+.coupon-foot-right {
+  width: 235rpx;
+  height: 154rpx;
+  border-radius: 0 0 15rpx 0;
+  background-image: radial-gradient(circle at right top, transparent 20rpx, #FFFFFF 20rpx);
+}
+
+.coupon-foot-text-view {
+  width: 471rpx;
+  height: 154rpx;
+  position: absolute;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.coupon-foot-text {
+  width: 371rpx;
+  height: 82rpx;
+  opacity: 0.6;
+  font-family: PingFangSC-Light;
+  font-size: 24rpx;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: 41rpx;
+  margin-top: 38rpx;
+}
+
+/* 领取按钮 */
+.get-button {
+  width: 471rpx;
+  height: 88rpx;
+  background: #00C250;
+  border-radius: 6rpx;
+  border-radius: 6rpx;
+  margin-top: 91rpx;
+  font-family: PingFangSC-Medium;
+  font-size: 32rpx;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 88rpx;
+}

@@ -1,0 +1,60 @@
+<view class="payment-coupon-view {{couponInfo.couponClass}}">
+  <view class="coupon-body {{couponInfo.couponClass}}-body">
+
+    <!-- 汇率券左边 -->
+    <block wx:if="{{couponInfo.couponClass==='exchange-coupon'}}">
+      <view class="{{couponInfo.couponClass}}-body-left"></view>
+    </block>
+
+    <!-- 通用券左边 -->
+    <block wx:elif="{{couponInfo.couponClass==='general-coupon'}}">
+      <view class="{{couponInfo.couponClass}}-body-left">
+        <view class="{{couponInfo.couponClass}}-body-left-above">
+          {{couponInfo.couponAmount}}
+        </view>
+        <view class="{{couponInfo.couponClass}}-body-left-below">
+          {{couponInfo.couponAmountTip}}
+        </view>
+      </view>
+    </block>
+
+    <!-- 专享券左边 -->
+    <block wx:elif="{{couponInfo.couponClass==='exclusive-coupon'}}" >
+      <view class="{{couponInfo.couponClass}}-body-left">
+        <view class="{{couponInfo.couponClass}}-body-left-above">
+          {{couponInfo.couponAmount}}
+        </view>
+        <view class="{{couponInfo.couponClass}}-body-left-below">
+          {{couponInfo.couponAmountTip}}
+        </view>
+      </view>
+    </block>
+
+    <!-- 右边的字 -->
+    <view class="{{couponInfo.couponClass}}-text">
+      <view class="text-above">
+        {{couponInfo.couponName}}
+      </view>
+      <view class="text-below">
+        {{couponInfo.couponTime}}
+      </view>
+    </view>
+    <view class="status-circle-out {{couponInfo.couponClass}}-status-circle-out">
+      <view class="status-circle-in {{couponInfo.couponClass}}-status-circle-in">
+        {{couponInfo.couponStatus}}
+      </view>
+    </view>
+  </view>
+
+  <!-- 白色tip -->
+  <view wx:if="{{couponInfo.couponClass==='general-coupon'}}" class="general-coupon-tip-under1 box-shadow"></view>
+  <view wx:if="{{couponInfo.couponClass==='general-coupon'}}" class="general-coupon-tip-under2 box-shadow"></view>
+  <view class=".coupon-tip box-shadow {{couponInfo.couponClass==='general-coupon'?'general-coupon-tip':''}}">
+    <view class="{{couponInfo.couponClass}}-tip-left">{{couponInfo.couponTipL}}</view>
+    <view class="tip-right">
+      {{couponInfo.couponTipR}}
+      <view class="money-huadiao">{{couponInfo.tipMoney}}</view>
+    </view>
+  </view>
+
+</view>

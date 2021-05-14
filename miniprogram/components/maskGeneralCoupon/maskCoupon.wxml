@@ -1,0 +1,54 @@
+<view class="container">
+  <view class="content-view">
+    <view class="title">
+      恭喜你获得：
+    </view>
+    <view class="coupon-view">
+      <view class="coupon-body">
+
+        <!-- 券体 -->
+        <view class="coupon-body-left"></view>
+        <view class="coupon-body-right"></view>
+
+        <view class="coupon-content">
+          <view class="wxpay">
+            微信支付
+          </view>
+          <view class="coupon-type">
+            {{couponInfo.couponName}}
+          </view>
+          <view class="coupon-info general-coupon">
+            <!-- 这里可以组件化来动态配置logo（图片、信息） -->
+            <!-- 通用券 -->
+            <block>
+              <view class="coupon-amount-view">
+                <!-- {{couponInfo.couponAmount}} -->
+                <view class="lottery-box">
+                  <view wx:for="{{numberArr}}" class="coupon-amount">
+                    {{item}}
+                  </view>
+                </view>
+              </view>
+              <view>
+                <image class="coupon-count" src="../../images/couponCount.png"></image>
+              </view>
+            </block>
+          </view>
+        </view>
+
+      </view>
+      <view class="coupon-foot">
+        <view class="coupon-foot-left"></view>
+        <view class="coupon-foot-right"></view>
+        <view class="coupon-foot-text-view">
+          <view class="coupon-foot-text">
+            {{couponInfo.couponTip}}
+          </view>
+        </view>
+      </view>
+    </view>
+    <view hidden="{{!showButton}}" class="get-button" bindtap="getMore">
+      {{buttonText}}
+    </view>
+  </view>
+</view>

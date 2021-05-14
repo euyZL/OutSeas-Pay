@@ -1,0 +1,181 @@
+<!--
+此文件为开发者工具生成，生成时间: 2021/5/14 下午8:48:36
+使用方法：
+在 C:\Users\43723\WeChatProjects\miniprogram-5\miniprogram\pages\index\index.wxml 引入模板
+
+```
+<import src="index.skeleton.wxml"/>
+<template is="skeleton" wx-if="{{loading}}" />
+```
+
+在 C:\Users\43723\WeChatProjects\miniprogram-5\miniprogram\pages\index\index.wxss 中引入样式
+```
+@import "./index.skeleton.wxss";
+```
+
+更多详细信息可以参考文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/skeleton.html
+-->
+<template name="skeleton">
+  <view class="sk-container">
+    <view is="components/navBar/navBar">
+      <view class="navBar--navbar navBar--watsons sk-image" style="height:84px;">
+        <view class="navBar--arrow" style="top: 48px; border: none;"></view>
+        <view class="navBar--navbar-title sk-transparent sk-text-22-7273-178 sk-text" style="top: 48px; background-position-x: 50%;">
+          境外游礼包
+        </view>
+      </view>
+    </view>
+    <view class="page">
+      <view class="head sk-image" style="top:84px">
+        <view class="shop-info">
+          <view>
+            <image class="shop-avatar sk-image" style="border: none;"></image>
+          </view>
+          <view class="shop-name">
+            <view class="shop-name-Zh sk-transparent sk-text-14-2857-213 sk-text" style="background-position-x: 50%;">屈臣氏</view>
+            <view class="shop-name-En sk-transparent sk-text-14-2857-273 sk-text" style="background-position-x: 50%;">watsons</view>
+          </view>
+        </view>
+      </view>
+      <scroll-view class="scroll-view" enable-flex="true" scroll-y="true">
+        <view class="tab">
+          <view class="tab-head">
+            <view class="tab-icon"></view>
+            <view class="tab-name sk-transparent sk-text-14-2857-726 sk-text" style="background-position-x: 50%;">微信支付优惠券</view>
+            <view class="tab-tip sk-transparent sk-text-14-2857-764 sk-text" style="background-position-x: 50%;">微信支付自动抵扣</view>
+          </view>
+          <view class="payment-coupon-tab-body">
+            <view is="components/payCoupon/payCoupon">
+              <view class="payCoupon--payment-coupon-view payCoupon--exchange-coupon">
+                <view class="payCoupon--coupon-body payCoupon--exchange-coupon-body sk-pseudo sk-pseudo-circle sk-image">
+                  <view class="payCoupon--exchange-coupon-body-left sk-pseudo sk-pseudo-circle"></view>
+                  <view class="payCoupon--exchange-coupon-text">
+                    <view class="payCoupon--text-above sk-transparent sk-text-14-2857-685 sk-text">
+                      超优汇率券
+                    </view>
+                    <view class="payCoupon--text-below sk-transparent sk-text-18-1818-539 sk-text">
+                      7天内笔笔有效
+                    </view>
+                  </view>
+                  <view class="payCoupon--status-circle-out payCoupon--exchange-coupon-status-circle-out" style="border: none;">
+                    <view class="payCoupon--status-circle-in payCoupon--exchange-coupon-status-circle-in sk-transparent sk-text-14-2857-136 sk-text" style="border: none;">
+                      生效中
+                    </view>
+                  </view>
+                </view>
+                <view class="payCoupon--coupon-tip payCoupon--box-shadow sk-image">
+                  <view class="payCoupon--exchange-coupon-tip-left sk-transparent sk-text-14-2857-420 sk-text">100港币=85.41人民币</view>
+                  <view class="payCoupon--tip-right sk-transparent">
+                    市场参考价
+                    <view class="payCoupon--money-huadiao sk-transparent sk-text-14-2857-159 sk-text" style="text-decoration-color: transparent; background-position-x: 50%;">'5.80人民币</view>
+                  </view>
+                </view>
+              </view>
+            </view>
+            <view is="components/payCoupon/payCoupon">
+              <view class="payCoupon--payment-coupon-view payCoupon--general-coupon">
+                <view class="payCoupon--coupon-body payCoupon--general-coupon-body sk-pseudo sk-pseudo-circle sk-image">
+                  <view class="payCoupon--general-coupon-body-left">
+                    <view class="payCoupon--general-coupon-body-left-above sk-transparent sk-text-17-1642-165 sk-text sk-pseudo sk-pseudo-circle" style="background-position-x: 50%;">
+                      3
+                    </view>
+                    <view class="payCoupon--general-coupon-body-left-below sk-transparent sk-text-14-2857-224 sk-text">
+                      满300元可用
+                    </view>
+                  </view>
+                  <view class="payCoupon--general-coupon-text">
+                    <view class="payCoupon--text-above sk-transparent sk-text-14-2857-898 sk-text">
+                      境外通用券
+                    </view>
+                    <view class="payCoupon--text-below sk-transparent sk-text-18-1818-116 sk-text">
+                      15天内有效
+                    </view>
+                  </view>
+                  <view class="payCoupon--status-circle-out payCoupon--general-coupon-status-circle-out" style="border: none;">
+                    <view class="payCoupon--status-circle-in payCoupon--general-coupon-status-circle-in sk-transparent sk-text-14-2857-928 sk-text" style="border: none;">
+                      已领取
+                    </view>
+                  </view>
+                </view>
+                <view class="payCoupon--general-coupon-tip-under1 payCoupon--box-shadow sk-image"></view>
+                <view class="payCoupon--general-coupon-tip-under2 payCoupon--box-shadow sk-image"></view>
+                <view class="payCoupon--coupon-tip payCoupon--box-shadow payCoupon--general-coupon-tip sk-image">
+                  <view class="payCoupon--general-coupon-tip-left sk-transparent sk-text-20-4545-617 sk-text" style="border: none;">4张待解锁</view>
+                  <view class="payCoupon--tip-right sk-transparent">
+                    使用后扫不同码可解锁下一张
+                    <view class="payCoupon--money-huadiao" style="text-decoration-color: transparent;"></view>
+                  </view>
+                </view>
+              </view>
+            </view>
+            <view is="components/payCoupon/payCoupon">
+              <view class="payCoupon--payment-coupon-view payCoupon--exclusive-coupon">
+                <view class="payCoupon--coupon-body payCoupon--exclusive-coupon-body sk-pseudo sk-pseudo-circle sk-image">
+                  <view class="payCoupon--exclusive-coupon-body-left">
+                    <view class="payCoupon--exclusive-coupon-body-left-above sk-transparent sk-text-7-6923-513 sk-text sk-pseudo sk-pseudo-circle" style="background-position-x: 50%;">
+                      20
+                    </view>
+                    <view class="payCoupon--exclusive-coupon-body-left-below sk-transparent sk-text-14-2857-443 sk-text" style="background-position-x: 50%;">
+                      满300元可用
+                    </view>
+                  </view>
+                  <view class="payCoupon--exclusive-coupon-text">
+                    <view class="payCoupon--text-above sk-transparent sk-text-14-2857-580 sk-text">
+                      屈臣氏专享券
+                    </view>
+                    <view class="payCoupon--text-below sk-transparent sk-text-18-1818-596 sk-text">
+                      21天内有效
+                    </view>
+                  </view>
+                  <view class="payCoupon--status-circle-out payCoupon--exclusive-coupon-status-circle-out" style="border: none;">
+                    <view class="payCoupon--status-circle-in payCoupon--exclusive-coupon-status-circle-in sk-transparent sk-text-14-2857-406 sk-text" style="border: none;">
+                      已领取
+                    </view>
+                  </view>
+                </view>
+                <view class="payCoupon--coupon-tip payCoupon--box-shadow sk-image">
+                  <view class="payCoupon--exclusive-coupon-tip-left sk-transparent sk-text-14-2857-808 sk-text">香港地区屈臣氏线下门店可用</view>
+                  <view class="payCoupon--tip-right sk-transparent">
+                    <view class="payCoupon--money-huadiao" style="text-decoration-color: transparent;"></view>
+                  </view>
+                </view>
+              </view>
+            </view>
+            <view is="components/payCoupon/payCoupon">
+              <view class="payCoupon--payment-coupon-view payCoupon--exclusive-coupon">
+                <view class="payCoupon--coupon-body payCoupon--exclusive-coupon-body sk-pseudo sk-pseudo-circle sk-image">
+                  <view class="payCoupon--exclusive-coupon-body-left">
+                    <view class="payCoupon--exclusive-coupon-body-left-above sk-transparent sk-text-7-6923-520 sk-text sk-pseudo sk-pseudo-circle" style="background-position-x: 50%;">
+                      20
+                    </view>
+                  </view>
+                  <view class="payCoupon--status-circle-out payCoupon--exclusive-coupon-status-circle-out" style="border: none;">
+                    <view class="payCoupon--status-circle-in payCoupon--exclusive-coupon-status-circle-in sk-transparent sk-text-14-2857-211 sk-text" style="border: none;">
+                      已领取
+                    </view>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+      <view class="pay-view">
+        <view class="pay-logo-view">
+          <image class="pay-logo sk-image"></image>
+        </view>
+        <view class="coupon-info arrow sk-transparent sk-text-15-9091-925 sk-text sk-pseudo sk-pseudo-circle">
+          超优汇率券生效中
+        </view>
+        <view class="pay-button">
+          <view>
+            <image class="wechatpay-logo sk-image"></image>
+          </view>
+          <view class="pay-text sk-transparent sk-text-14-2857-6 sk-text">
+            付款
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

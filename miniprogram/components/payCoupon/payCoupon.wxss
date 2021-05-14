@@ -1,0 +1,387 @@
+.box-shadow {
+  box-shadow: 0 3px 11px 0 rgba(179, 179, 179, 0.50);
+}
+
+/* 支付券 */
+.payment-coupon-view {
+  /* width: 695rpx; */
+  position: relative;
+  width: 100%;
+  background-color: transparent;
+  /* box-shadow: 0 3px 11px 0 rgba(179, 179, 179, 0.50); */
+  border-radius: 9rpx;
+  /* padding: 8rpx 11rpx 19rpx 11rpx; */
+  margin-bottom: 19rpx;
+  margin-top: 20rpx;
+}
+
+/* 汇率券 通用券*/
+.exchange-coupon,
+.general-coupon {
+  height: 342rpx;
+}
+
+/* 专享券 */
+.exclusive-coupon {
+  height: 265rpx;
+}
+
+/* 券主体 */
+.coupon-body {
+  width: 673rpx;
+  border-radius: 15rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 汇率券 */
+.exchange-coupon-body {
+  height: 230rpx;
+  background-image: radial-gradient(circle at left bottom, #F7F7F7 20rpx, transparent 20rpx),
+    radial-gradient(circle at right bottom, #F7F7F7 20rpx, transparent 20rpx),
+    linear-gradient(200deg, #FFA000 0%, #FF8F00 100%);
+  -webkit-mask-image: linear-gradient(0, #FFA000 0%, #FF8F00 100%);
+}
+
+/* 通用券 */
+.general-coupon-body {
+  height: 230rpx;
+  background-color: #00C250;
+  background-image: radial-gradient(circle at left bottom, #F7F7F7 20rpx, transparent 20rpx),
+    radial-gradient(circle at right bottom, #F7F7F7 20rpx, transparent 20rpx);
+  -webkit-mask-image: linear-gradient(0, #00C250, #00C250);
+}
+
+/* 专享券 */
+.exclusive-coupon-body {
+  height: 174rpx;
+  background-color: #FFF2EA;
+  background-image: radial-gradient(circle at left bottom, #F7F7F7 20rpx, transparent 20rpx),
+    radial-gradient(circle at right bottom, #F7F7F7 20rpx, transparent 20rpx);
+  -webkit-mask-image: linear-gradient(0, #FFF2EA, #FFF2EA);
+}
+
+/* 锯齿 */
+.coupon-body:after {
+  content: '';
+  position: absolute;
+  height: 14rpx;
+  width: 100%;
+  background-image: radial-gradient(circle 7rpx at bottom, #FFFFFF 7rpx, transparent 7rpx);
+  background-size: 18rpx 14rpx;
+}
+
+/* 把after放到底部 */
+.exchange-coupon-body:after {
+  top: 216rpx;
+}
+
+.general-coupon-body:after {
+  top: 216rpx;
+}
+
+.exclusive-coupon-body:after {
+  top: 162rpx;
+}
+
+/* 图标 */
+/* 汇率券 */
+.exchange-coupon-body-left {
+  width: 126rpx;
+  height: 110rpx;
+  border-radius: 50%;
+  opacity: 0.8;
+  background: #E77400;
+  position: absolute;
+  top: 55rpx;
+  left: 71rpx;
+  line-height: 110rpx;
+  text-align: center;
+  font-size: 64rpx;
+  color: #FFFFFF;
+}
+
+.exchange-coupon-body-left:before {
+  content: "￥";
+  position: absolute;
+  left: 35rpx;
+}
+
+.exchange-coupon-body-left:after {
+  content: "";
+  border-width: 20px 8px;
+  border-style: solid;
+  border-color: #E77400 transparent transparent transparent;
+  position: absolute;
+  top: 80rpx;
+  left: 20rpx;
+  transform: rotate(45deg);
+}
+
+/* 通用券 */
+.general-coupon-body-left {
+  position: absolute;
+  top: 35rpx;
+  left: 65rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.general-coupon-body-left-above {
+  width: 88rpx;
+  height: 122rpx;
+  opacity: 0.8;
+  background: #1F9850;
+  border-radius: 2.7rpx;
+  border-radius: 2.7rpx;
+  position: relative;
+  transform: translate();
+  font-family: Helvetica;
+  font-size: 81rpx;
+  color: #FFFFFF;
+  letter-spacing: -2.84rpx;
+  text-align: center;
+  line-height: 122rpx;
+  margin-bottom: 13.3rpx;
+}
+
+.general-coupon-body-left-above:after {
+  content: '元';
+  font-family: PingFangSC-Semibold;
+  font-size: 31.35rpx;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  position: absolute;
+  transform: translateX(30.4rpx);
+}
+
+.general-coupon-body-left-below {
+  opacity: 0.9;
+  font-family: PingFangSC-Light;
+  font-size: 24rpx;
+  color: #FFFFFF;
+  letter-spacing: 0;
+}
+
+/* 专享券 */
+.exclusive-coupon-body-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 15rpx;
+  left: 65rpx;
+  text-align: center;
+}
+
+.exclusive-coupon-body-left-above {
+  width: 87rpx;
+  height: 96rpx;
+  opacity: 0.8;
+  border-radius: 2.7rpx;
+  position: relative;
+  font-family: Helvetica;
+  font-size: 80rpx;
+  color: #F15451;
+  letter-spacing: -2.8rpx;
+  text-align: center;
+  line-height: 96rpx;
+  transform: translateX(-8px);
+}
+
+.exclusive-coupon-body-left-above:after {
+  content: '元';
+  font-family: PingFangSC-Medium;
+  font-size: 30rpx;
+  color: #F15451;
+  letter-spacing: 0;
+  position: absolute;
+  transform: translate(1rpx, 10rpx);
+}
+
+.exclusive-coupon-body-left-below {
+  opacity: 0.6;
+  font-family: PingFangSC-Light;
+  font-size: 24rpx;
+  color: #000000;
+  letter-spacing: 0;
+}
+
+/* 文字 */
+.exchange-coupon-text,
+.general-coupon-text {
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  position: relative;
+  transform: translateX(50rpx);
+}
+
+.exclusive-coupon-text {
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  position: relative;
+  transform: translate(50rpx, 10rpx);
+}
+
+.text-above {
+  font-family: PingFangSC-Medium;
+  font-size: 32rpx;
+  letter-spacing: 0;
+  margin-bottom: 16rpx;
+}
+
+.text-below {
+  opacity: 0.7;
+  font-family: PingFangSC-Light;
+  font-size: 26rpx;
+  letter-spacing: 0;
+  line-height: 40rpx;
+}
+
+/* 右上角状态 */
+.status-circle-out {
+  width: 108rpx;
+  height: 108rpx;
+  opacity: 0.3;
+  border: 2rpx solid #f7f7f7;
+  border-radius: 50%;
+  transform: rotate(-330deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -13rpx;
+  right: -13rpx;
+}
+
+.status-circle-in {
+  width: 101rpx;
+  height: 101rpx;
+  border: 1rpx solid #f7f7f7;
+  border-radius: 50%;
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #000000;
+  letter-spacing: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.exclusive-coupon-status-circle-out {
+  opacity: 0.1;
+  border: 2rpx solid #000000;
+}
+
+.exclusive-coupon-status-circle-in {
+  border: 1rpx solid #000000;
+  color:#000000
+}
+
+
+/* 白条的提示 */
+.coupon-tip {
+  width: 673rpx;
+  height: 91rpx;
+  background-color: #FFFFFF;
+  background-image: radial-gradient(circle at left top, #F7F7F7, #F7F7F7 10px, transparent 11px),
+    radial-gradient(circle at right top, #F7F7F7, #F7F7F7 10px, transparent 11px);
+  border-radius: 15rpx;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.exchange-coupon-tip-left {
+  opacity: 0.7;
+  font-family: PingFangSC-Regular;
+  font-size: 26rpx;
+  color: #000000;
+  letter-spacing: 0;
+  margin-right: 12rpx;
+  margin-left: 40rpx;
+}
+
+.general-coupon-tip-left {
+  opacity: 1;
+  font-family: PingFangSC-Light;
+  font-size: 24rpx;
+  color: gray;
+  letter-spacing: 0;
+  line-height: 40rpx;
+  border: 2px solid #E9E9E9;
+  border-radius: 20rpx;
+  margin-right: 40rpx;
+  margin-left: 27rpx;
+  padding: 0 20rpx 0 20rpx;
+}
+
+.exclusive-coupon-tip-left {
+  opacity: 0.3;
+  font-family: PingFangSC-Light;
+  font-size: 24rpx;
+  color: #000000;
+  letter-spacing: 0;
+  margin-left: 50rpx;
+}
+
+.tip-right {
+  opacity: 0.4;
+  font-family: PingFangSC-Light;
+  font-size: 24rpx;
+  color: #000000;
+  letter-spacing: 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  margin-right: 4rpx;
+}
+
+.money-huadiao {
+  opacity: 0.4;
+  font-family: PingFangSC-Light;
+  font-size: 24rpx;
+  color: #000000;
+  letter-spacing: 0;
+  text-align: center;
+  text-decoration: line-through;
+}
+
+/* 通用券下方层叠 */
+.general-coupon-tip {
+  transform: translateY(-182rpx);
+}
+
+.general-coupon-tip-under1 {
+  width: 673rpx;
+  height: 91rpx;
+  background-color: #FFFFFF;
+  background-image: radial-gradient(circle at left top, #F7F7F7, #F7F7F7 10px, transparent 11px),
+    radial-gradient(circle at right top, #F7F7F7, #F7F7F7 10px, transparent 11px);
+  border-radius: 15rpx;
+  position: relative;
+  transform: translateY(5rpx);
+  z-index: -98;
+}
+
+.general-coupon-tip-under2 {
+  width: 673rpx;
+  height: 91rpx;
+  background-color: #FFFFFF;
+  background-image: radial-gradient(circle at left top, #F7F7F7, #F7F7F7 10px, transparent 11px),
+    radial-gradient(circle at right top, #F7F7F7, #F7F7F7 10px, transparent 11px);
+  border-radius: 15rpx;
+  position: relative;
+  transform: translateY(-81rpx);
+  z-index: -99;
+}

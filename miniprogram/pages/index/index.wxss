@@ -1,0 +1,278 @@
+.watsons{
+  background: linear-gradient(223deg, #FF723F 100%, #E74833 0%);
+}
+
+/* 蒙层 */
+.mask-view {
+  width: 110vw;
+  height: 110vh;
+  opacity: 0.6;
+  background: #000000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3
+}
+
+/* head部分 */
+.head {
+  position: relative;
+  display: flex;
+  width: 100%;
+  /* opacity: 0.6; */
+  height: 371rpx;
+  background: linear-gradient(223deg, #FF723F 100%, #E74833 0%);
+  z-index: 0;
+}
+
+/* 商店信息 */
+.shop-info {
+  display: flex;
+  position: relative;
+  /* top: 49rpx;
+  left: 49rpx; */
+  transform: translate(49rpx, 49rpx);
+  height: 106rpx;
+}
+
+.shop-avatar {
+  width: 100rpx;
+  height: 100rpx;
+  border: 3px solid #FFB8B7;
+  border-radius: 50%;
+  /* background: #15918C;
+  text-align: center;
+  line-height: 100rpx; */
+}
+
+.shop-name {
+  position: relative;
+  /* left: 19rpx;
+  top: 3rpx */
+  transform: translate(19rpx, 3rpx);
+}
+
+.shop-name-Zh {
+  height: 59rpx;
+  font-family: PingFangSC-Medium;
+  font-size: 42rpx;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.shop-name-En {
+  height: 43rpx;
+  opacity: 0.3;
+  font-family: AppleSDGothicNeo-SemiBold;
+  font-size: 35rpx;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+/* 优惠券 */
+.scroll-view {
+  position: relative;
+  height: 1038rpx;
+  background-color: #F7F7F7;
+  border-radius: 25rpx 25rpx;
+  margin-bottom: 160rpx;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 53rpx;
+}
+
+.tab {
+  display: flex;
+  flex-direction: column;
+  width: 673rpx;
+  /* background-color: greenyellow; */
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  margin-top: 13rpx;
+  margin-bottom: 106rpx;
+}
+
+.tab-head {
+  display: flex;
+  align-items: center;
+  margin-bottom: 29rpx;
+}
+
+.tab-icon {
+  width: 8rpx;
+  height: 40rpx;
+  background: #E54A30;
+  border-radius: 2rpx;
+}
+
+.tab-name {
+  position: relative;
+  /* left: 8rpx; */
+  transform: translate(8rpx);
+  /* height: 45rpx;
+  line-height: 45rpx; */
+  font-family: PingFangSC-Medium;
+  font-size: 32rpx;
+  color: #252525;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.tab-tip {
+  position: absolute;
+  right: 50rpx;
+  /* height: 45rpx;
+  line-height: 45rpx; */
+  opacity: 0.6;
+  font-family: PingFangSC-Regular;
+  font-size: 26rpx;
+  color: #000000;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.payment-coupon-tab-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 更多商家优惠 */
+.more-coupon {
+  display: flex;
+  width: 674rpx;
+  height: 140rpx;
+  align-items: center;
+  opacity: 0.8;
+  background: #FFFFFF;
+  border-radius: 8px;
+  margin-bottom: 60rpx;
+  padding-top: 35rpx;
+  padding-bottom: 35rpx;
+}
+
+.shop-icon-view {
+  padding-left: 31rpx;
+}
+
+.shop-icon {
+  height: 71rpx;
+  width: 71rpx;
+}
+
+.more-coupon-text {
+  font-family: PingFangSC-Medium;
+  font-size: 32rpx;
+  color: #252525;
+  letter-spacing: 0;
+  margin-left: 17rpx;
+}
+
+.shop-coupon-arrow::after {
+  position: relative;
+  left: 320rpx;
+}
+
+/* foot */
+.foot {
+  display: flex;
+  opacity: 0.6;
+  font-family: PingFangSC-Light;
+  font-size: 26rpx;
+  color: #000000;
+  line-height: 36rpx;
+  margin-bottom: 30rpx;
+}
+
+.separator {
+  display: inline-block;
+  width: 2rpx;
+  height: 36rpx;
+  margin-left: 28rpx;
+  margin-right: 28rpx;
+  opacity: 0.3;
+  background: #000000;
+}
+
+/* 付款栏 */
+.pay-view {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 160rpx;
+  bottom: 0;
+  background-color: #FFFFFF;
+  z-index: 2;
+}
+
+.pay-logo-view {
+  position: relative;
+  /* left: 38rpx;
+  top: 53rpx; */
+  transform: translate(38rpx, 53rpx);
+}
+
+.pay-logo {
+  width: 46rpx;
+  height: 41rpx;
+}
+
+.coupon-info {
+  position: relative;
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: rgba(0, 0, 0, 0.60);
+  line-height: 40rpx;
+  /* top: 52rpx;
+  left: 52rpx; */
+  transform: translate(52rpx, 52rpx);
+}
+
+.arrow::after {
+  position: relative;
+  display: inline-block;
+  content: '';
+  width: 28rpx;
+  height: 28rpx;
+  opacity: 0.5;
+  /* left: 16rpx; */
+  border-left: .04rem solid #000000;
+  border-bottom: .04rem solid #000000;
+  transform: scale(0.7) translate(16rpx, 4rpx) rotateZ(-135deg);
+}
+
+.pay-button {
+  position: absolute;
+  /* right: 26rpx;
+  top: 27rpx; */
+  transform: translate(454rpx, 27rpx);
+  background: #00C250;
+  border-radius: 6px;
+  width: 270rpx;
+  height: 88rpx;
+  display: flex;
+  align-items: center;
+}
+
+.wechatpay-logo {
+  width: 79rpx;
+  height: 45rpx;
+  position: relative;
+  /* left: 46rpx; */
+  transform: translateX(46rpx);
+}
+
+.pay-text {
+  font-family: PingFangSC-Medium;
+  font-size: 32rpx;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  height: 45rpx;
+  position: relative;
+  /* left: 42rpx; */
+  transform: translateX(42rpx);
+}

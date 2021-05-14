@@ -1,0 +1,7 @@
+<view class="navbar {{shopName}}" style='height:{{navHeight}}px;'>
+  <!-- background-color:{{bgColor}} -->
+  <view class="arrow" style='top:{{navTop}}px;'></view>
+  <view class='navbar-title' style='top:{{navTop}}px'>
+    境外游礼包
+  </view>
+</view>

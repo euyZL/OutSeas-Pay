@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "payCoupon":"../../components/payCoupon/payCoupon",
+    "shopCoupon":"../../components/shopCoupon/shopCoupon",
+    "maskExchangeCoupon":"../../components/maskExchangeCoupon/maskCoupon",
+    "maskGeneralCoupon":"../../components/maskGeneralCoupon/maskCoupon",
+    "navBar":"../../components/navBar/navBar"
+  },
+  "navigationBarBackgroundColor": "#FF723F",
+  "navigationBarTitleText": "境外游礼包",
+  "navigationBarTextStyle": "white"
+}

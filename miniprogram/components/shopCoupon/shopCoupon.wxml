@@ -1,0 +1,55 @@
+<wxs module="fun" src="shopCoupon.wxs"></wxs>
+<view class="shop-coupon-tab-body">
+  <view class="shop-coupon" wx:for="{{couponList}}" wx:key="index">
+
+    <!-- 券上部 -->
+    <view class="coupon-body">
+      <!-- 券名字 -->
+      <view class="coupon-name">
+        {{item.couponName}}
+      </view>
+
+      <!-- 券类型 -->
+      <view class="coupon-type">
+        {{item.couponType}}
+      </view>
+      <!-- 券中间 -->
+      <view class="coupon-logo">
+        <block wx:if="{{fun.typeOf(item.couponType,'折扣券')!=-1}}">
+          <view class="coupon-discount">
+            {{item.couponAmount}}
+          </view>
+        </block>
+        <block wx:elif="{{fun.typeOf(item.couponType,'礼品券')!=-1}}">
+          <view>
+            <image class="coupon-icon-gift" src="../../images/giftLogo.png"></image>
+          </view>
+        </block>
+        <block wx:else>
+          <view class="coupon-amount">
+            {{item.couponAmount}}
+          </view>
+        </block>
+      </view>
+
+      <!-- 券提示 -->
+      <view class="coupon-tip">
+        <view>
+          {{item.couponTipL}}
+        </view>
+        <view class="coupin-tip-right">
+          {{item.couponTipR}}
+        </view>
+      </view>
+
+    </view>
+    <!-- 上部完 -->
+
+    <!-- 券白条 -->
+    <view class="coupon-foot">
+      <view class="use-button">
+        使用优惠
+      </view>
+    </view>
+  </view>
+</view>

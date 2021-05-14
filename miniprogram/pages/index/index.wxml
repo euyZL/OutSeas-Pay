@@ -1,0 +1,86 @@
+<navBar shopName="{{shopName}}"></navBar>
+
+<view class="page">
+
+  <view wx:if="{{showMask}}" class="mask-view" bindtap="closeMask"></view>
+  <!-- 领券遮罩 -->
+  <maskExchangeCoupon wx:if="{{showMask && maskCoupon.showExchange}}" bind:getNext="nextCoupon"
+    couponInfo="{{couponInfo}}"></maskExchangeCoupon>
+  <maskGeneralCoupon wx:elif="{{showMask && maskCoupon.showGeneral}}" bind:getMore="moreCoupon"
+    couponInfo="{{couponInfo2}}"></maskGeneralCoupon>
+
+  <!-- 页面主体 -->
+  <!-- head -->
+  <view class="head" style="top:{{navHeight}}px">
+    <view class="shop-info">
+      <view>
+        <image class="shop-avatar" src="../../images/shopLogo.png"></image>
+      </view>
+      <view class="shop-name">
+        <view class="shop-name-Zh">屈臣氏</view>
+        <view class="shop-name-En">watsons</view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 可以用wxs来写一个scroll-view拉起/放下时，head缩/放 -->
+  <scroll-view scroll-y="flase" class="scroll-view" enable-flex="true">
+
+    <!-- 微信支付优惠券 -->
+    <view class="tab">
+      <view class="tab-head">
+        <view class="tab-icon"></view>
+        <view class="tab-name">微信支付优惠券</view>
+        <view class="tab-tip">微信支付自动抵扣</view>
+      </view>
+      <view class="payment-coupon-tab-body">
+        <payCoupon wx:for="{{payCouponList}}" couponInfo="{{item}}" wx:key="index"></payCoupon>
+      </view>
+    </view>
+
+    <!-- 商户优惠券 -->
+    <view class="tab">
+      <view class="tab-head">
+        <view class="tab-icon"></view>
+        <view class="tab-name">商户优惠券</view>
+        <view class="tab-tip">请向收银员出示使用优惠券</view>
+      </view>
+      <shopCoupon couponList="{{shopCouponList}}"></shopCoupon>
+    </view>
+
+    <view class="more-coupon">
+      <view class="shop-icon-view">
+        <image class="shop-icon" src="../../images/shopIcon.png"></image>
+      </view>
+      <view class="more-coupon-text">
+        更多商家优惠
+      </view>
+      <view class="arrow shop-coupon-arrow"></view>
+    </view>
+
+    <view class="foot">
+      <!-- <view></view> -->
+      活动规则
+      <view class="separator"></view>
+      联系客服
+    </view>
+  </scroll-view>
+
+  <!-- 支付栏 -->
+  <view class="pay-view">
+    <view class="pay-logo-view">
+      <image class="pay-logo" src="../../images/payLogo.png"></image>
+    </view>
+    <view class="coupon-info arrow">
+      超优汇率券生效中
+    </view>
+    <view class="pay-button">
+      <view>
+        <image class="wechatpay-logo" src="../../images/WechatPayLogo.png"></image>
+      </view>
+      <view class="pay-text">
+        付款
+      </view>
+    </view>
+  </view>
+</view>
